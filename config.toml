@@ -1,7 +1,6 @@
 baseURL = "localhost:1313"
 languageCode = "en-us"
 paginate = 6
-theme = "portio"
 title = "Vivint Smart Home"
 # Main Menu
 [[menu.main]]
