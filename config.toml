@@ -1,4 +1,4 @@
-baseURL = "https://main--vivint-nd.netlify.app"
+baseURL = "https://vivint-nd.netlify.app"
 languageCode = "en-us"
 paginate = 6
 title = "Vivint Smart Home"

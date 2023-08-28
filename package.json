@@ -1,0 +1,24 @@
+{
+  "name": "vivint-nd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trey-crow/vivint-nd.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trey-crow/vivint-nd/issues"
+  },
+  "homepage": "https://github.com/trey-crow/vivint-nd#readme",
+  "dependencies": {
+    "@tinacms/cli": "^1.5.29",
+    "tinacms": "^1.5.20"
+  }
+}
