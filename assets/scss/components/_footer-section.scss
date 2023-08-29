@@ -19,10 +19,17 @@
         }
     }
     &__cta {
+        @include mobile {
+            height:1400px
+        }
+        @include desktop {
+            height:1700px
+        }
+       
         background: $primary;
         padding: 100px 80px;
         border-radius: 20px;
-        display: flex;
+        display: inline-flex;
         align-items: flex-end;
         margin-top: -110px;
         flex-wrap: wrap;
