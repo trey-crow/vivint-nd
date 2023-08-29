@@ -17,9 +17,21 @@ $body-color: #7e7e8a;
 //
 
 // Fonts
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900|Yeseva+One&display=swap");
-$font-family-base: "Poppins", sans-serif;
-$headings-font-family: "Yeseva One", cursive;
+
+
+@font-face {
+    font-family: VivintBold;
+    src: url("/fonts/vivintCircular-Bold.otf") format("opentype");
+    
+}
+@font-face {
+    font-family: VivintSans;
+    src: url("/fonts/VivintSans-Medium.otf") format("opentype");
+    
+}
+// @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900|Yeseva+One&display=swap");
+$font-family-base: "VivintBold";
+$headings-font-family: "VivintSans";
 
 // Size
 $font-size-base: 1.125rem; // 18px

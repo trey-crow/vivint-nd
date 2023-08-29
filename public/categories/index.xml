@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Vivint Smart Home</title>
-    <link>https://vivint-nd.netlify.app/categories/</link>
+    <link>https://northdallas.pro/categories/</link>
     <description>Recent content in Categories on Vivint Smart Home</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://vivint-nd.netlify.app/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://northdallas.pro/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
