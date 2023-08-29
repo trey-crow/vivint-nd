@@ -1,6 +1,6 @@
 ---
 Name: Trey
-heroTitle: 'Hello World '
+heroTitle: ''
 heroContent: |
   # Test content
 
@@ -12,6 +12,7 @@ heroVideoThumb: images/hero/popup-thumb.jpg
 heroVideoURL: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
 _template: tech
 ---
+
 
 
 
