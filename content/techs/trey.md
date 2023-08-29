@@ -4,7 +4,7 @@ heroTitle: 'Hello World '
 heroContent: |
   # Test content
 
-  Lorem ipsum dolor sit amet, consectetur adipiscing elite mfffff
+  Lorem ipsum dolor sit amet, consectetur adipiscing elite mf
 heroButton: Contact me
 heroButtonURL: contact
 heroImage: images/hero/hero-trey.jpg
