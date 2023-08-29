@@ -41,7 +41,7 @@ weight = 4
 
 
 contactLink = "contact"
-copyright = "All right reserved copyright © Portio 2020"
+copyright = ""
 footerLogo = "images/logos/nav-logo.webp"
 # We're using formspree.io for form handling, paste your formspree url below
 fabformURL  = "https://fabform.io/f/JpTXRUa"
