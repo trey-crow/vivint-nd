@@ -8,16 +8,17 @@
 
 a.text-light,
 a.text-dark {
+    color: $greytwo !important;
     // transition: all 0.3s ease;
     &:hover {
-        color: $primary !important;
+        color: $palm !important;
     }
 }
 
 .top-title {
     font-size: 20px;
     display: block;
-    color: $slate;
+    color: $palm;
     @extend .mb-3;
 }
 
