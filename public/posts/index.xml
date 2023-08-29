@@ -1,20 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Vivint Smart Home</title>
-    <link>https://vivint-nd.netlify.app/</link>
-    <description>Recent content on Vivint Smart Home</description>
+    <title>Posts on Vivint Smart Home</title>
+    <link>https://vivint-nd.netlify.app/posts/</link>
+    <description>Recent content in Posts on Vivint Smart Home</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://vivint-nd.netlify.app/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title></title>
-      <link>https://vivint-nd.netlify.app/techs/trey/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://vivint-nd.netlify.app/techs/trey/</guid>
-      <description></description>
-    </item>
-    
+    <language>en-us</language><atom:link href="https://vivint-nd.netlify.app/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hello, World!</title>
       <link>https://vivint-nd.netlify.app/posts/hello-world/</link>
