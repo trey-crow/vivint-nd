@@ -56,6 +56,11 @@ export default defineConfig({
                   lable: "Image URL",
                   type: "image",
                 },
+                {
+                  name: "amigoLink",
+                  lable: "Amigo URL",
+                  type: "string",
+                },
               ],
           },
         ],
