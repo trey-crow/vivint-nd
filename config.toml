@@ -5,7 +5,7 @@ title = "Vivint Smart Home"
 # Main Menu
 [[menu.main]]
 name = "Home"
-url = "#home"
+url = "{{baseURl}}/#"
 weight = 1
 [[menu.main]]
 name = "About" 
