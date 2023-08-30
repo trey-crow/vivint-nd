@@ -34,8 +34,6 @@
               <span class="top-title pre-line">{{ .Params.heroTitle }}</span>
               {{ .Params.heroContent | markdownify }}
             </div>
-            <!-- <a type="button" class="btn btn-lg btn-primary btn-zoom"
-              href="{{ .Params.buttonURL | absURL }}">{{ .Params.buttonName }}</a> -->
           </div>
         </div>
         <div class="col-lg-6">
@@ -49,7 +47,7 @@
                     -webkit-mask-size: contain;
                     -webkit-mask-position: center center;
                   ' />
-  
+ 
             {{ if .Params.heroVideoURL }}
             <div class="hero_figure-popup">
               <div class="thumb">
@@ -68,20 +66,24 @@
          
             
             {{ end }}
+           <!------- Video Modal
+            Upon clicking button, the video will be embedded in a custom modal window for both desktop and mobile devices.
+            The issue without this modal is that the video would redirect on mobile devices and have the cusotmer leave the website
+            ------------>
           </div>
           <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
           
                 
-                <div class="modal-body">
+                <div id="yt-player" class="modal-body">
           
                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>        
                   <!-- 16:9 aspect ratio -->
-                  <div class="embed-responsive embed-responsive-16by9">
-                  <iframe class="embed-responsive-item" src="{{ .Params.heroVideoURL }}" id="video"  allowfullscreen="true" allowscriptaccess="always" allow="autoplay"></iframe>
+                  <div   class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="{{ .Params.heroVideoURL }}" id="video"  allowfullscreen="true" allowscriptaccess="always" allowautoplay="false" ></iframe>
                   </div>
                     
                   
@@ -94,6 +96,55 @@
       </div>
     </div>
   </section>
+
+  <!--------------- Products ---------------------->
+
+  <section class="section resume" id="resume">
+    <div class="resume__background"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="resume__heading">
+                    <div class="text-light">
+                        <span class="top-title pre-line">{{ .Params.offerTopTitle }}</span>
+                        {{ .Params.offerTitle | markdownify }}
+                    </div>
+
+                    <div class="btn-group nav mt-5">
+                        <a href="#automation" class="btn btn-primary active" data-toggle="tab">Automation</a>
+                        <a href="#security" class="btn btn-primary" data-toggle="tab">Security</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="tab-content ">
+                    <div class="resume__education tab-pane active" id="automation">
+                        {{ $Section := .Params.automation }}
+                        {{ range $Section }}
+                        <div class="resume__education_item">
+                            <!-- <span class="pre-line text-primary"> {{ .Params.time }} </span> -->
+                            {{ .content | markdownify }}
+                        </div>
+                        {{ end }}
+
+                    </div>
+
+                    <div class="resume__education tab-pane" id="security">
+                        {{ $Section := .Params.security }}
+                        {{ range $Section }}
+                        <div class="resume__education_item">
+                           <!--- <span class="pre-line text-primary"> {{ .Params.time }} </span> -->
+                            {{ .content | markdownify }}
+                        </div>
+                        {{ end }}
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
   <!-----------------FOOTER   ---------------->
   <section class="footer" id="contact">
@@ -207,7 +258,7 @@ $("#video").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinf
 // stop playing the youtube video when I close the modal
 $('#myModal').on('hide.bs.modal', function (e) {
     // a poor man's stop video
-    $("#video").attr('src',$videoSrc); 
+    callPlayer('yt-player', 'stopVideo');
 }) 
 
 </script>
