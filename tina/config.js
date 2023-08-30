@@ -61,6 +61,30 @@ export default defineConfig({
                   lable: "Amigo URL",
                   type: "string",
                 },
+                {
+                  label: 'Automations',
+                  name: 'automation',
+                  type: 'object',
+                  fields: [
+                    {
+                      label: 'Content',
+                      name: 'content',
+                      type: 'rich-text',
+                    }
+                  ],
+                },
+                {
+                  label: 'Security',
+                  name: 'Security',
+                  type: 'object',
+                  fields: [
+                    {
+                      label: 'Content',
+                      name: 'content',
+                      type: 'rich-text',
+                    }
+                  ],
+                },
               ],
           },
         ],
