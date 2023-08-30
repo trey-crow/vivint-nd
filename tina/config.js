@@ -64,10 +64,14 @@ export default defineConfig({
                 {
                   label: 'Automations',
                   name: 'automation',
-                  component: 'list',
-                  field: {
-                    component: 'rich-text',
-                  },
+                  type: 'object',
+                  list: true,
+                  fields: [
+                    {
+                    type: 'rich-text',
+                    name: 'content',
+                    },
+                  ],
                 },
                 
               ],
