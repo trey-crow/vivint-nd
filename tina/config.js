@@ -62,14 +62,44 @@ export default defineConfig({
                   type: "string",
                 },
                 {
+                  name: 'offerTopTitle',
+                  lable: 'Offer Top Title',
+                  type: "string",
+                },
+                {
+                  name: 'offerTitle',
+                  lable: 'Offer Title',
+                  type: "string",
+                },
+                {
                   label: 'Automations',
                   name: 'automation',
                   type: 'object',
                   list: true,
                   fields: [
                     {
+                      name: 'title',
+                      type: 'string',
+                    },
+                    {
                     type: 'rich-text',
                     name: 'content',
+                    },
+                  ],
+                },
+                {
+                  label: 'Security',
+                  name: 'security',
+                  type: 'object',
+                  list: true,
+                  fields: [
+                    {
+                    name: 'title',
+                    type: 'string',
+                    },
+                    {
+                      type: 'rich-text',
+                      name: 'content',
                     },
                   ],
                 },
