@@ -62,6 +62,11 @@ export default defineConfig({
                   type: "string",
                 },
                 {
+                  name: "formsparkURL",
+                  lable: "Formspark URL",
+                  type: "string",
+                },
+                {
                   name: 'offerTopTitle',
                   lable: 'Offer Top Title',
                   type: "string",
