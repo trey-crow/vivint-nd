@@ -1,41 +1,64 @@
-window.addEventListener("DOMContentLoaded", function () {
-  var form = document.getElementById("contact-form");
-  var button = document.getElementById("contact-form-button");
-  var status = document.getElementById("contact-form-status");
 
-  function success() {
-    form.reset();
-    button.style = "display: none ";
-    status.innerHTML = "Thanks! Contact form is submitted successfully.";
-  }
+const submitButton = document.getElementById("send-button");
+submitButton.addEventListener("click", function(event) {
+   event.preventDefault();
 
-  function error() {
-    status.innerHTML = "Oops! There was a problem.";
-  }
 
-  // handle the form submission event
-  if (form != null) {
-    form.addEventListener("submit", function (ev) {
-      ev.preventDefault();
-      var data = new FormData(form);
-      ajax(form.method, form.action, data, success, error);
-    });
-  }
-});
+    const url = document.getElementById("formspark-url").value;
+    const nameInput = document.getElementById("name");
+    const emailInput = document.getElementById("email");
+    const phoneInput = document.getElementById("phoneNumber");
+    const status = document.getElementById("contact-form-status");
+    const form = document.getElementById("contact-form");
 
-// helper function for sending an AJAX request
+    const name = nameInput.value;
+    const nameParts = name.split(' ');
 
-function ajax(method, url, data, success, error) {
-  var xhr = new XMLHttpRequest();
-  xhr.open(method, url);
-  xhr.setRequestHeader("Accept", "application/json");
-  xhr.onreadystatechange = function () {
-    if (xhr.readyState !== XMLHttpRequest.DONE) return;
-    if (xhr.status === 200) {
-      success(xhr.response, xhr.responseType);
-    } else {
-      error(xhr.status, xhr.response, xhr.responseType);
+    const firstName = nameParts[0];
+    const lastName = nameParts[1];
+
+
+   
+
+    if (nameInput.validity.valueMissing || emailInput.validity.valueMissing || phoneInput.validity.valueMissing) {
+        event.preventDefault(); // Prevent form submission if there are error
+
+          // Change the input field styling for the empty fields
+          if (nameInput.validity.valueMissing) {
+              nameInput.classList.add("invalid-input");
+          }
+          if (emailInput.validity.valueMissing) {
+              emailInput.classList.add("invalid-input");
+          }
+          if (phoneInput.validity.valueMissing) {
+              phoneInput.classList.add("invalid-input");
+          }
+    
     }
-  };
-  xhr.send(data);
-}
+    else {
+      nameInput.classList.remove("invalid-input");
+      emailInput.classList.remove("invalid-input");
+      phoneInput.classList.remove("invalid-input");
+      fetch(url, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify({
+            firstName:  firstName,
+            lastName: lastName,
+            email: emailInput.value,
+            phone: phoneInput.value,
+          }),
+        })
+          .then(function (response) {
+            status.style.display = "block"
+            form.reset();
+            console.log(response);
+          })
+          .catch(function (error) {
+            console.error(error);
+          });
+       }
+      });

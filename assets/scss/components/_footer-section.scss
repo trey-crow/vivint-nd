@@ -19,15 +19,7 @@
         }
     }
     &__cta {
-        @media screen and (min-width: 769px){
-            height:1750px;
-            width:100%;
-        }
-        @media screen and (max-width: 769px){
-            height:1450px;
-            width:100%;
-        }
-       
+        
         background: $primary;
         padding: 100px 80px;
         border-radius: 20px;

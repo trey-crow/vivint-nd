@@ -1,49 +1,85 @@
-.contact__info {
-  &_item {
-    box-shadow: 0px 20px 40px 0px rgba(50, 65, 141, 0.12);
-    padding: 50px 40px;
-    border-radius: 20px;
-    &-icon {
-      height: 110px;
-      width: 125px;
-      position: relative;
-      margin-bottom: 35px;
-      .icon-background {
-        position: absolute;
-        top: 0;
-        right: 0;
-      }
-      .icon {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        z-index: 1;
-      }
-    }
-    a {
-      color: $body-color;
-      text-decoration: underline;
-    }
-  }
+
+.contact-form{
+  justify-content: center;
 }
-.contact-form {
-  padding: 50px 0 100px 0;
-  &-input {
-    .form-group {
-      margin-bottom: 30px;
-    }
-  }
-  #map {
-    border-radius: 30px;
-    height: 100%;
-    @include desktop {
-      height: 400px;
-      margin-top: 60px;
-    }
-  }
-  &-generator {
-    p,a,strong{
-      font-size: 13px;
-    }
-  }
+.get-in-touch {
+  max-width: 800px;
+  margin: 50px auto;
+  position: relative;
+
 }
+.get-in-touch .title {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 3.2em;
+  line-height: 48px;
+  padding-bottom: 48px;
+     
+    background: -moz-linear-gradient(left,#f4524d  0%,#5543ca 100%) !important;
+    background: -webkit-linear-gradient(left,#f4524d  0%,#5543ca 100%) !important;
+    background: linear-gradient(to right,#f4524d  0%,#5543ca  100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+.contact-form .form-field {
+  position: relative;
+  margin: 32px 0;
+  
+}
+.contact-form .input-text {
+  display: block;
+  width: 100%;
+  height: 36px;
+  color: #fff;
+  border-width: 0 0 2px 0;
+  border-color: #fff;
+  background-color: transparent;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+}
+.contact-form .input-text:focus {
+  outline: none;
+}
+
+.contact-form .input-text:focus + .label,
+.contact-form .input-text:not(:placeholder-shown) + .label {
+ 
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+          
+}
+.input-text.invalid-input {
+  border-color: red; /* Change border color to red for invalid fields */
+  /* You can add more styling to indicate the error visually */
+}
+
+.contact-form .label {
+  position: absolute;
+  margin-bottom: 20px;
+  left: 20px;
+  bottom: 10px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #fff;
+  cursor: text;
+  transition: transform .2s ease-in-out;
+}
+
+.contact-form .submit-btn {
+  display: inline-block;
+  background-color: #DBA435;
+  
+  border-radius: 600px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 16px;
+  padding: 15px 16px;
+  border: none;
+  width:200px;
+  cursor: pointer;
+}
+

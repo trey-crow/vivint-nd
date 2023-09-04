@@ -209,237 +209,59 @@ $(document).ready(function () {
     });
 });
 
-// G-Map
-/**
- * Created by Kausar on 06/10/2016.
- */
-window.marker = null;
 
-function initialize() {
-  var map;
-  var lat = $("#map").data("lat");
-  var long = $("#map").data("long");
-  console.log(lat, long);
-  var mapCenter = new google.maps.LatLng(lat, long);
-  var style = [
-    {
-      featureType: "water",
-      elementType: "geometry",
-      stylers: [
-        {
-          color: "#e9e9e9",
-        },
-        {
-          lightness: 17,
-        },
-      ],
-    },
-    {
-      featureType: "landscape",
-      elementType: "geometry",
-      stylers: [
-        {
-          color: "#f5f5f5",
-        },
-        {
-          lightness: 20,
-        },
-      ],
-    },
-    {
-      featureType: "road.highway",
-      elementType: "geometry.fill",
-      stylers: [
-        {
-          color: "#ffffff",
-        },
-        {
-          lightness: 17,
-        },
-      ],
-    },
-    {
-      featureType: "road.highway",
-      elementType: "geometry.stroke",
-      stylers: [
-        {
-          color: "#ffffff",
-        },
-        {
-          lightness: 29,
-        },
-        {
-          weight: 0.2,
-        },
-      ],
-    },
-    {
-      featureType: "road.arterial",
-      elementType: "geometry",
-      stylers: [
-        {
-          color: "#ffffff",
-        },
-        {
-          lightness: 18,
-        },
-      ],
-    },
-    {
-      featureType: "road.local",
-      elementType: "geometry",
-      stylers: [
-        {
-          color: "#ffffff",
-        },
-        {
-          lightness: 16,
-        },
-      ],
-    },
-    {
-      featureType: "poi",
-      elementType: "geometry",
-      stylers: [
-        {
-          color: "#f5f5f5",
-        },
-        {
-          lightness: 21,
-        },
-      ],
-    },
-    {
-      featureType: "poi.park",
-      elementType: "geometry",
-      stylers: [
-        {
-          color: "#dedede",
-        },
-        {
-          lightness: 21,
-        },
-      ],
-    },
-    {
-      elementType: "labels.text.stroke",
-      stylers: [
-        {
-          visibility: "on",
-        },
-        {
-          color: "#ffffff",
-        },
-        {
-          lightness: 16,
-        },
-      ],
-    },
-    {
-      elementType: "labels.text.fill",
-      stylers: [
-        {
-          saturation: 36,
-        },
-        {
-          color: "#333333",
-        },
-        {
-          lightness: 40,
-        },
-      ],
-    },
-    {
-      elementType: "labels.icon",
-      stylers: [
-        {
-          visibility: "off",
-        },
-      ],
-    },
-    {
-      featureType: "transit",
-      elementType: "geometry",
-      stylers: [
-        {
-          color: "#f2f2f2",
-        },
-        {
-          lightness: 19,
-        },
-      ],
-    },
-    {
-      featureType: "administrative",
-      elementType: "geometry.fill",
-      stylers: [
-        {
-          color: "#fefefe",
-        },
-        {
-          lightness: 20,
-        },
-      ],
-    },
-    {
-      featureType: "administrative",
-      elementType: "geometry.stroke",
-      stylers: [
-        {
-          color: "#fefefe",
-        },
-        {
-          lightness: 17,
-        },
-        {
-          weight: 1.2,
-        },
-      ],
-    },
-  ];
-  var mapOptions = {
-    // SET THE CENTER
-    center: mapCenter,
-    // SET THE MAP STYLE & ZOOM LEVEL
-    mapTypeId: google.maps.MapTypeId.ROADMAP,
-    // REMOVE ALL THE CONTROLS EXCEPT ZOOM
-    zoom: 13,
-    panControl: false,
-    scrollwheel: false,
-    zoomControl: true,
-    mapTypeControl: false,
-    scaleControl: false,
-    streetViewControl: false,
-    overviewMapControl: false,
-    zoomControlOptions: {
-      style: google.maps.ZoomControlStyle.LARGE,
-    },
-  };
 
-  map = new google.maps.Map(document.getElementById("map"), mapOptions);
-  // SET THE MAP TYPE
-  var mapType = new google.maps.StyledMapType(style, {
-    name: "Grayscale",
+// Script for handling video modal in the hero section
+
+$(document).ready(function() {
+  
+  // Gets the video src from the data-src on each button
+  
+  var $videoSrc;  
+  $('.video-btn').click(function() {
+      $videoSrc = $(this).data( "src" );
   });
-  map.mapTypes.set("grey", mapType);
-  map.setMapTypeId("grey");
-  //CREATE A CUSTOM PIN ICON
-  var marker_image = $("#map").data("pin");
-  var pinIcon = new google.maps.MarkerImage(
-    marker_image,
-    null,
-    null,
-    null,
-    new google.maps.Size(25, 34)
-  );
-  marker = new google.maps.Marker({
-    position: mapCenter,
-    map: map,
-    icon: pinIcon,
-    title: "bizcred",
-  });
-}
+  console.log($videoSrc);
+  
+    
+    
+  // when the modal is opened autoplay it  
+  $('#myModal').on('shown.bs.modal', function (e) {
+      
+  // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+  $("#video").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
+  
+  })
+    
+  
+  
+  // stop playing the youtube video when I close the modal
+  $('#myModal').on('hide.bs.modal', function (e) {
+      // a poor man's stop video
+      callPlayer('yt-player', 'stopVideo');
+  }) 
+  
 
-if ($("#map").length > 0) {
-  google.maps.event.addDomListener(window, "load", initialize);
-}
+
+  // Phone number restrictions in form
+
+  const phoneNumberInput = document.getElementById("phoneNumber");
+  
+      phoneNumberInput.addEventListener("input", function (event) {
+          // Remove any non-numeric characters and limit the length to 12 characters
+          const formattedPhoneNumber = event.target.value.replace(/\D/g, '').slice(0, 12);
+  
+          // Format the phone number as XXX-XXX-XXXX
+          const formatted = formattedPhoneNumber.replace(/(\d{3})(\d{3})(\d{4})/, '$1-$2-$3');
+  
+          // Update the input value with the formatted phone number
+          event.target.value = formatted;
+      });
+  
+      phoneNumberInput.addEventListener("keydown", function (event) {
+          // Allow only numeric digits, backspace, and dash (-)
+          if (!(event.key.match(/^\d$/) || event.key === "Backspace" || event.key === "-")) {
+              event.preventDefault();
+          }
+      });
+    });
