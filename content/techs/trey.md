@@ -11,11 +11,8 @@ heroImage: /trey/hero-trey.jpg
 heroVideoThumb: images/hero/popup-thumb.jpg
 heroVideoURL: 'https://www.youtube.com/embed/dQw4w9WgXcQ?si=I1pn2Xsan8wMGj2n'
 amigoLink: 'https://amigoteam.com/order-submission/4064e07aa08b4835b634d5688be019bb'
-<<<<<<< HEAD
 formsparkURL: "https://submit-form.com/Sv32P1mD"
 
-=======
->>>>>>> refs/remotes/origin/main
 offerTopTitle: Hello World
 offerTitle: Lorem ipsum dolor sit amet
 automation:

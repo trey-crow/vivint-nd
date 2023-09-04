@@ -37,6 +37,16 @@ export default defineConfig({
                   type: "string",
                 },
                 {
+                  name: "amigoLink",
+                  lable: "Amigo URL",
+                  type: "string",
+                },
+                {
+                  name: "formsparkURL",
+                  lable: "Formspark URL",
+                  type: "string",
+                },
+                {
                   name: "heroTitle",
                   lable: "Hero Title",
                   type: "string",
@@ -56,16 +66,7 @@ export default defineConfig({
                   lable: "Image URL",
                   type: "image",
                 },
-                {
-                  name: "amigoLink",
-                  lable: "Amigo URL",
-                  type: "string",
-                },
-                {
-                  name: "formsparkURL",
-                  lable: "Formspark URL",
-                  type: "string",
-                },
+               
                 {
                   name: 'offerTopTitle',
                   lable: 'Offer Top Title',
