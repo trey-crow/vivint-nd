@@ -265,3 +265,72 @@ $(document).ready(function() {
           }
       });
     });
+
+
+    $(document).ready(function() {
+      $('.logo-carousel').slick({
+        slidesToShow: 5,
+        speed: 5000,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 0,
+		    cssEase: 'linear',
+        arrows: true,
+        infinite: true,
+        centerMode: true,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 4
+          }
+        }, {
+          breakpoint: 520,
+          settings: {
+            slidesToShow: 2
+          }
+        }]
+      });
+    });
+
+
+
+    function loadYouTubeVideo() {
+      const videoId = "VIDEO_ID"; // Replace with your actual video ID
+      const player = new YT.Player("youtube-video", {
+        videoId: videoId,
+        events: {
+          // You can add event handlers here if needed
+        },
+      });
+    }
+  
+    // Function to stop the YouTube video
+    function stopYouTubeVideo() {
+      const player = document.getElementById("youtube-video");
+      player.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
+    }
+  
+    // Listen for the modal close event
+    const modal = document.getElementById("video-modal");
+    const button = document.getElementById('modal-button');
+    const closeButton = document.querySelector(".close-modal");
+    
+    modal.addEventListener("click", function(event) {
+      if (event.target === modal || event.target === closeButton) {
+        stopYouTubeVideo();
+        modal.style.display = "none";
+      }
+    });
+  
+    // Load the YouTube video when the modal is opened
+    modal.addEventListener("show.bs.modal", function () {
+      loadYouTubeVideo();
+    });
+
+    button.addEventListener("click", openModal);
+
+    function openModal() {
+      modal.style.display = "block";
+    }

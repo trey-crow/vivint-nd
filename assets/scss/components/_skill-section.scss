@@ -1,6 +1,6 @@
 .skill {
   position: relative;
-  padding: 100px 0 150px 0;
+  padding: 50px 0 50px 0;
   @include desktop {
     padding: 100px 0;
   }
@@ -34,6 +34,7 @@
   }
   &__thumb {
     position: relative;
+    width: 50vw;
     @include tablet {
       margin-bottom: 30px;
     }

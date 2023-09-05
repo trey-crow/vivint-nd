@@ -2,7 +2,7 @@
 Name: Trey
 heroTitle: ''
 heroContent: |
-  # Test content
+  # Test Content
 
   Lorem ipsum dolor sit amet, consectetur adipiscing elite mf
 heroButton: Contact me

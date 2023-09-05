@@ -1,40 +1,40 @@
-{{ with .Site.Data.resumeSection }}
-{{ if .enable }}
-<section class="section resume" id="resume">
+
+
+<section class="section resume">
     <div class="resume__background"></div>
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
                 <div class="resume__heading">
                     <div class="text-light">
-                        <span class="top-title pre-line">{{ .topTitle }}</span>
-                        {{ .title | markdownify }}
+                        <span class="top-title pre-line">{{ .Params.offerTopTitle }}</span>
+                        {{ .Params.offerTitle | markdownify }}
                     </div>
 
                     <div class="btn-group nav mt-5">
-                        <a href="#{{.tab1Target}}" class="btn btn-primary active" data-toggle="tab">{{ .tab1Name }}</a>
-                        <a href="#{{.tab2Target}}" class="btn btn-primary" data-toggle="tab">{{ .tab2Name }}</a>
+                        <a href="#automation" class="btn btn-primary active" data-toggle="tab">Automation</a>
+                        <a href="#security" class="btn btn-primary" data-toggle="tab">Security</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="tab-content ">
-                    <div class="resume__education tab-pane active" id="{{.tab1Target}}">
-                        {{ $Section := .education }}
+                    <div class="resume__education tab-pane active" id="automation">
+                        {{ $Section := .Params.automation }}
                         {{ range $Section }}
                         <div class="resume__education_item">
-                            <span class="pre-line text-primary"> {{ .time }} </span>
+                            <!-- <span class="pre-line text-primary"> {{ .Params.time }} </span> -->
                             {{ .content | markdownify }}
                         </div>
                         {{ end }}
 
                     </div>
 
-                    <div class="resume__education tab-pane" id="{{.tab2Target}}">
-                        {{ $Section := .experience }}
+                    <div class="resume__education tab-pane" id="security">
+                        {{ $Section := .Params.security }}
                         {{ range $Section }}
                         <div class="resume__education_item">
-                            <span class="pre-line text-primary"> {{ .time }} </span>
+                           <!--- <span class="pre-line text-primary"> {{ .Params.time }} </span> -->
                             {{ .content | markdownify }}
                         </div>
                         {{ end }}
@@ -45,5 +45,4 @@
         </div>
     </div>
 </section>
-{{ end }}
-{{ end }}
+
