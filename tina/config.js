@@ -55,11 +55,7 @@ export default defineConfig({
                   label: "Formspark URL",
                   type: "string",
                 },
-                {
-                  name: "heroTitle",
-                  label: "Hero Title",
-                  type: "string",
-                },
+               
                 {
                   name: "heroContent",
                   label: "Hero Content",

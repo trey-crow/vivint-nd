@@ -1,6 +1,5 @@
 ---
 Name: Trey
-heroTitle: Elevate Your Home Security & Automation
 heroContent: |
   # Experience Smart Living with Vivint
 
