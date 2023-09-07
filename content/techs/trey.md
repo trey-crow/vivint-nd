@@ -64,8 +64,10 @@ security:
       #### 24/7 Monitoring
 
 
-      Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod
-      tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+      Vivint's home security monitoring service and support means you have
+      backup when an alarm is triggered with the best specialists ready to
+      respond to an emergency. If you can’t be reached, we’ll send first
+      responders.
   - title: Fire
     content: >
       #### Fire Protection
@@ -82,6 +84,7 @@ security:
       tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
 _template: tech
 ---
+
 
 
 
