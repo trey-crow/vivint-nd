@@ -79,15 +79,11 @@ security:
       combo smoke and carbon monoxide detector even tells your Vivint Smart Hub
       to shut off the HVAC system to slow the spread of flames or, if CO is
       identified, turn on the HVAC fan to clear the threat.
-  - title: Medical
-    content: >
-      #### Medical Alerts
-
-
-      Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod
-      tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+  - title: ''
+    content: ''
 _template: tech
 ---
+
 
 
 
