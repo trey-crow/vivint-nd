@@ -64,8 +64,8 @@ security:
       #### 24/7 Monitoring
 
 
-      Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod
-      tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+      The award-winning Vivint monitoring team is always ready to respond to
+      alarms so you have backup in an emergency—day or night.
   - title: Fire
     content: >
       #### Fire Protection
@@ -82,6 +82,7 @@ security:
       tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
 _template: tech
 ---
+
 
 
 
