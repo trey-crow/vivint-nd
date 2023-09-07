@@ -73,8 +73,12 @@ security:
       #### Fire Protection
 
 
-      Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod
-      tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+      Protect against fires, floods, and carbon monoxide. Get added safety and
+      peace of mind with alarms that are part of your Vivint system. If an alarm
+      sounds, you’ll first be connected with Vivint’s monitoring team. They’ll
+      send emergency personnel
+
+      if needed.
   - title: Medical
     content: >
       #### Medical Alerts
@@ -84,6 +88,7 @@ security:
       tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
 _template: tech
 ---
+
 
 
 
