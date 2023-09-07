@@ -39,6 +39,16 @@ export default defineConfig({
                   required: true,
                 },
                 {
+                  name: "phone",
+                  label: "Phone",
+                  type: "string",
+                },
+                {
+                  name: "email",
+                  label: "email",
+                  type: "string",
+                },
+                {
                   name: "advanced",
                   label: "Advanced",
                   type: 'boolean',
@@ -55,7 +65,6 @@ export default defineConfig({
                   label: "Formspark URL",
                   type: "string",
                 },
-               
                 {
                   name: "heroContent",
                   label: "Hero Content",

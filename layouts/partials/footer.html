@@ -34,13 +34,13 @@
       
       <div class="col-lg-4">
         <div class="text-light footer__widget_address mb-5">
-          <h4 class="base-font">Contact Me</h4>
+          <h4 class="base-font">{{ .Params.Name }}</h4>
           {{ $address := .Site.Params.address }}
           <ul class="fa-ul small">
             <li class="mb-2"><a class="text-light" href="tel:{{ $address.phone }}"><span class="fa-li"><i
-                    class="fa fa-phone"></i></span>{{ $address.phone }}</a></li>
+                    class="fa fa-phone"></i></span>{{ .Params.phone }}</a></li>
             <li class="mb-2"><a class="text-light" href="mailto:{{ $address.email }}"><span class="fa-li"><i
-                    class="fa fa-envelope"></i></span>{{ $address.email }}</a></li>
+                    class="fa fa-envelope"></i></span>{{ .Params.email }}</a></li>
             <li class="mb-2">
               <span class="fa-li"><i class="fa fa-map-marker"></i></span>{{ $address.address }}</a>
             </li>
