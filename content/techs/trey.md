@@ -65,7 +65,10 @@ security:
 
 
       The award-winning Vivint monitoring team is always ready to respond to
-      alarms so you have backup in an emergency—day or night.
+      alarms so you have backup in an emergency. Whether you’re leaving for a
+      week-long vacation or just turning in for the night, worry less knowing
+      that Vivint professionals are ready to respond if anything happens at your
+      home.
   - title: Fire
     content: >
       #### Fire Protection
@@ -85,6 +88,7 @@ security:
       tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
 _template: tech
 ---
+
 
 
 
