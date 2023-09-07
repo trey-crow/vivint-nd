@@ -43,8 +43,11 @@ automation:
       #### Lighting
 
 
-      Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod
-      tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+      Easily integrate the convenience and benefits of Vivint Smart Lighting
+      into your home—no electrical work required. We’ll help you create a Smart
+      Lighting system that offers multiple options for lighting control,
+      customization, and automation. All while extending the safety features of
+      your Vivint smart home.
 security:
   - title: Cameras
     content: >
@@ -76,6 +79,7 @@ security:
       tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
 _template: tech
 ---
+
 
 
 
