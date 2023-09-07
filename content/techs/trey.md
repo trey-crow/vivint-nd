@@ -54,8 +54,11 @@ security:
       #### 4k Cameras
 
 
-      Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod
-      tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+      The best video surveillance cameras and video doorbells are the ones use
+      Smart Deter. The Vivint Outdoor Camera Pro detects real threats and scares
+      away lurkers with light and sound. With unmatched video quality,
+      weather-resistant technology, and intelligent motion alerts, the Outdoor
+      Camera Pro protects your perimeter like none other.
   - title: Monitoring
     content: >
       #### 24/7 Monitoring
@@ -79,6 +82,7 @@ security:
       tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
 _template: tech
 ---
+
 
 
 
