@@ -34,8 +34,10 @@ automation:
       #### Door Locks
 
 
-      Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod
-      tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+      Smart Locks allow you to assign up to 30 unique access codes for family
+      and friends so they can easily come and go—no more leaving a spare key out
+      in the open. Your smart security system even tracks codes to keep you
+      informed about who locks and unlocks doors at any given time.
   - title: Lighting
     content: >
       #### Lighting
@@ -74,6 +76,7 @@ security:
       tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
 _template: tech
 ---
+
 
 
 
