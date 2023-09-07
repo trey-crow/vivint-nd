@@ -10,9 +10,9 @@ heroButtonURL: contact
 heroImage: /trey/hero-trey.jpg
 heroVideoThumb: images/hero/popup-thumb.jpg
 heroVideoURL: 'https://www.youtube.com/embed/dQw4w9WgXcQ?si=I1pn2Xsan8wMGj2n'
+advanced: true
 amigoLink: 'https://amigoteam.com/order-submission/4064e07aa08b4835b634d5688be019bb'
-formsparkURL: "https://submit-form.com/Sv32P1mD"
-
+formsparkURL: 'https://submit-form.com/Sv32P1mD'
 offerTopTitle: Hello World
 offerTitle: Lorem ipsum dolor sit amet
 automation:
@@ -69,6 +69,7 @@ security:
       tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
 _template: tech
 ---
+
 
 
 

@@ -33,48 +33,57 @@ export default defineConfig({
               fields: [
                 {
                   name: "Name",
-                  lable: "Name",
+                  label: "Name",
                   type: "string",
+                  isTitle: true,
+                  required: true,
+                },
+                {
+                  name: "advanced",
+                  label: "Advanced",
+                  type: 'boolean',
+                  description: 'Toggle to turn off Amigo and use Zapier',
+                  
                 },
                 {
                   name: "amigoLink",
-                  lable: "Amigo URL",
+                  label: "Amigo URL",
                   type: "string",
                 },
                 {
                   name: "formsparkURL",
-                  lable: "Formspark URL",
+                  label: "Formspark URL",
                   type: "string",
                 },
                 {
                   name: "heroTitle",
-                  lable: "Hero Title",
+                  label: "Hero Title",
                   type: "string",
                 },
                 {
                   name: "heroContent",
-                  lable: "Hero Content",
+                  label: "Hero Content",
                   type: "rich-text",
                 },
                 {
                   name: "heroVideoURL",
-                  lable: "Video URL",
+                  label: "Video URL",
                   type: "string",
                 },
                 {
                   name: "heroImage",
-                  lable: "Image URL",
+                  label: "Image URL",
                   type: "image",
                 },
                
                 {
                   name: 'offerTopTitle',
-                  lable: 'Offer Top Title',
+                  label: 'Offer Top Title',
                   type: "string",
                 },
                 {
                   name: 'offerTitle',
-                  lable: 'Offer Title',
+                  label: 'Offer Title',
                   type: "string",
                 },
                 {
@@ -92,6 +101,12 @@ export default defineConfig({
                     name: 'content',
                     },
                   ],
+                  ui: {
+                    itemProps: (item) => {
+                      // Field values are accessed by item?.<Field name>
+                      return { label: item?.title };
+                    },
+                  },
                 },
                 {
                   label: 'Security',
@@ -108,11 +123,18 @@ export default defineConfig({
                       name: 'content',
                     },
                   ],
+                  ui: {
+                    itemProps: (item) => {
+                      // Field values are accessed by item?.<Field name>
+                      return { label: item?.title };
+                    },
+                  },
                 },
                 
               ],
           },
         ],
+      
       },
     ],
   },
