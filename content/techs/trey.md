@@ -71,8 +71,11 @@ security:
       #### Fire Protection
 
 
-      Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod
-      tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+      The battery-powered Vivint Smoke & CO Combo Detector alerts our 24/7
+      monitoring team if smoke or carbon monoxide is detected. The intuitive
+      combo smoke and carbon monoxide detector even tells your Vivint Smart Hub
+      to shut off the HVAC system to slow the spread of flames or, if CO is
+      identified, turn on the HVAC fan to clear the threat.
   - title: Medical
     content: >
       #### Medical Alerts
@@ -82,6 +85,7 @@ security:
       tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
 _template: tech
 ---
+
 
 
 
