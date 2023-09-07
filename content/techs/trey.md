@@ -10,7 +10,7 @@ heroButtonURL: contact
 heroImage: /trey/hero-trey.jpg
 heroVideoThumb: images/hero/popup-thumb.jpg
 heroVideoURL: 'https://www.youtube.com/embed/KzJzXHmzc98?si=6H9NcYkTtI0TeCpI'
-advanced: true
+advanced: false
 amigoLink: 'https://amigoteam.com/order-submission/4064e07aa08b4835b634d5688be019bb'
 formsparkURL: 'https://submit-form.com/Sv32P1mD'
 offerTopTitle: Your Security is Our Priority
@@ -81,6 +81,7 @@ security:
       if needed.
 _template: tech
 ---
+
 
 
 
