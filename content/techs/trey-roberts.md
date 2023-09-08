@@ -3,7 +3,7 @@ Name: Trey Roberts
 phone: (972) 512-8337
 email: william.roberts@vivint.com
 heroContent: |
-  # Experience Smart Living with Vivint
+  # Experience Smart Living
 
   -Your Trusted Local Vivint Technician
 heroButton: Contact me
