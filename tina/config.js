@@ -25,6 +25,19 @@ export default defineConfig({
         label: "Technicians",
         path: "content/techs",
         format: "md",
+        ui: {
+          filename: {
+            // if disabled, the editor can not edit the filename
+            readonly: true,
+            // Example of using a custom slugify function
+            slugify: (values) => {
+              // Values is an object containing all the values of the form. In this case it is {title?: string, topic?: string}
+              return `${values?.Name
+                ?.toLowerCase()
+                .replace(/ /g, '-')}`
+            },
+          },
+        },
             templates: [
               {
               name: "tech",
@@ -64,6 +77,7 @@ export default defineConfig({
                   name: "formsparkURL",
                   label: "Formspark URL",
                   type: "string",
+                  description: "Integrate Formspark with Zapier for a more hands-on experience. Toggle advanced to use."
                 },
                 {
                   name: "heroContent",
@@ -71,16 +85,21 @@ export default defineConfig({
                   type: "rich-text",
                 },
                 {
-                  name: "heroVideoURL",
-                  label: "Video URL",
-                  type: "string",
-                },
-                {
                   name: "heroImage",
                   label: "Image URL",
                   type: "image",
                 },
-               
+                {
+                  name: "heroVideoThumb",
+                  label: "Video Thumbnail",
+                  type: "image",
+                },
+                {
+                  name: "heroVideoURL",
+                  label: "Video URL",
+                  type: "string",
+                  description: "Make sure to use the embed link for the youtube video"
+                },
                 {
                   name: 'offerTopTitle',
                   label: 'Offer Top Title',
