@@ -28,6 +28,7 @@ automation:
       that controls your locks, cameras, and garage door. This wifi thermostat
       completes your system, ensuring your home temperature stays where you want
       it, always.
+    img: /images/products/therm.png
   - title: Door Locks
     content: >
       #### Door Locks
@@ -37,6 +38,7 @@ automation:
       and friends so they can easily come and go—no more leaving a spare key out
       in the open. Your smart security system even tracks codes to keep you
       informed about who locks and unlocks doors at any given time.
+    img: /images/products/lock.png
   - title: Lighting
     content: >
       #### Lighting
@@ -47,6 +49,7 @@ automation:
       Lighting system that offers multiple options for lighting control,
       customization, and automation. All while extending the safety features of
       your Vivint smart home.
+    img: /images/products/light.png
 security:
   - title: Cameras
     content: >
@@ -58,6 +61,7 @@ security:
       away lurkers with light and sound. With unmatched video quality,
       weather-resistant technology, and intelligent motion alerts, the Outdoor
       Camera Pro protects your perimeter like none other.
+    img: /images/products/odc.png
   - title: Monitoring
     content: >
       #### 24/7 Monitoring
@@ -67,6 +71,7 @@ security:
       backup when an alarm is triggered with the best specialists ready to
       respond to an emergency. If you can’t be reached, we’ll send first
       responders.
+    img: /images/products/panic.png
   - title: Fire
     content: >
       #### Fire Protection
@@ -78,6 +83,44 @@ security:
       send emergency personnel
 
       if needed.
+    img: /images/products/smok.png
+serviceTitle: What does Vivint do for you?
+services:
+  - title: Fire Monitoring
+    content: >
+      With Vivint's Fire Monitoring Service, we provide round-the-clock
+      vigilance, instant alerts, and swift response to keep you safe. Enjoy
+      peace of mind knowing we're here to safeguard what matters most
+    img: /images/service/fire.png
+  - title: Continous Recording
+    content: >
+      With uninterrupted surveillance, you'll never miss a moment, ensuring
+      thorough monitoring, evidence preservation, and real-time insights.
+      Protect your peace of mind with seamless, round-the-clock surveillance.
+    img: /images/service/cloud.png
+  - title: Auto Locking
+    content: >
+      Your home's guardian angel. Seamlessly locking doors and securing your
+      sanctuary, it's your hassle-free way to protect your family. Automate your
+      safety with custom actions for your daily work-flow
+    img: /images/service/lock.png
+  - title: Mobile Control
+    content: >
+      With Vivint's mobible app, your safety is never out of reach. Arm/disarm,
+      check cameras, and receive alerts on the go. Stay connected and in
+      control, ensuring peace of mind, anytime, anywhere
+    img: /images/service/mobile.png
+  - title: Storm Alerts
+    content: >
+      Stay one step ahead of Mother Nature with Vivint's real-time storm alerts.
+      Your safety matters, which is why the Smart Hub instantly informs you.
+      Protect what matters most, rain or shine, with advanced storm alerts
+    img: /images/service/storm.png
+  - title: Whole Home Alarm
+    content: >
+      Experience whole-home protection like never before. Our state-of-the-art
+      alarm system not only alerts a monitoring station but also sets off sirens
+      throughout your home. Complete security, immediate response
+    img: /images/service/speaker.png
 _template: tech
 ---
-

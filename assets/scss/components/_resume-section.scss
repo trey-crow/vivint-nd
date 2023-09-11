@@ -26,11 +26,10 @@
             margin-right: 0;
             margin-bottom: 30px;
         }
-        span{
-            &::before{
-                background: $light;
-            }
+        h2{
+            font-size: 2em;
         }
+        
     }
     &__education{
         &_item{
@@ -51,6 +50,16 @@
                 margin: 0 0 20px 30px;
                 position: relative;
             }
+            img{
+                width: 50% ;
+                height: 50%;
+                display: block;
+                margin: auto;
+                border-radius: 50px;
+ 
+            }
         }
     }
 }
+
+

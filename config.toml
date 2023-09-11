@@ -77,3 +77,8 @@ phone = "(000) 000-0000"
 #icon = "fa-twitter-square"
 #url = "https://twitter.com/"
 #weight = 4
+
+
+[taxonomies]
+  tag = "techs"
+  

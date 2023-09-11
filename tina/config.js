@@ -119,10 +119,17 @@ export default defineConfig({
                     {
                       name: 'title',
                       type: 'string',
+                      label: 'Title',
                     },
                     {
                     type: 'rich-text',
                     name: 'content',
+                    label: 'Content',
+                    },
+                    {
+                      type: 'image',
+                      name: 'img',
+                      label: "Image",
                     },
                   ],
                   ui: {
@@ -145,6 +152,40 @@ export default defineConfig({
                     {
                       type: 'rich-text',
                       name: 'content',
+                    },
+                    {
+                      type: 'image',
+                      name: 'img',
+                      label: "Image",
+                    },
+                  ],
+                  ui: {
+                    itemProps: (item) => {
+                      // Field values are accessed by item?.<Field name>
+                      return { label: item?.title };
+                    },
+                  },
+                },
+                {
+                  label: 'Services',
+                  name: 'services',
+                  type: 'object',
+                  list: true,
+                  fields: [
+                    {
+                      name: 'title',
+                      type: 'string',
+                      label: 'Title',
+                    },
+                    {
+                    type: 'rich-text',
+                    name: 'content',
+                    label: 'Content',
+                    },
+                    {
+                      type: 'image',
+                      name: 'img',
+                      label: "Image",
                     },
                   ],
                   ui: {

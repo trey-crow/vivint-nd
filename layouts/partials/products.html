@@ -1,22 +1,16 @@
-
-
 <section class="section resume">
     <div class="resume__background"></div>
     <div class="container">
         <div class="row">
             {{ if  .Params.advanced }}
-
-                {{ partial "form.html" .}}
-
+                {{ partial "form.html" . }}
             {{ end  }}
-    
-
         </div>
         <div class="row">
             <div class="col-lg-6">
                 <div class="resume__heading">
                     <div class="text-light">
-                        <span class="top-title pre-line">{{ .Params.offerTopTitle }}</span>
+                        <h2 class="top-title">{{ .Params.offerTopTitle }}</h2>
                         {{ .Params.offerTitle | markdownify }}
                     </div>
 
@@ -27,29 +21,32 @@
                 </div>
             </div>
             <div class="col-lg-6">
-                <div class="tab-content ">
+                <div class="tab-content">
                     <div class="resume__education tab-pane active" id="automation">
                         {{ $Section := .Params.automation }}
                         {{ range $Section }}
-                        <div class="resume__education_item">
+                            <div class="resume__education_item row">
+                                <img src="{{ .img }}">
+                                <div class="col-sm">
+                                    {{ .content | markdownify }}
+                                </div>
+                            </div>
                             <!-- <span class="pre-line text-primary"> {{ .Params.time }} </span> -->
-                            {{ .content | markdownify }}
-                        </div>
                         {{ end }}
-
                     </div>
 
                     <div class="resume__education tab-pane" id="security">
                         {{ $Section := .Params.security }}
                         {{ range $Section }}
-                        <div class="resume__education_item">
-                           <!--- <span class="pre-line text-primary"> {{ .Params.time }} </span> -->
-                            {{ .content | markdownify }}
-                        </div>
+                            <div class="resume__education_item row">
+                                <img src="{{ .img }}">
+                                <div class="col-sm">
+                                    {{ .content | markdownify }}
+                                </div>
+                            </div>
                         {{ end }}
                     </div>
-
-                </div>
+                </div> 
             </div>
         </div>
     </div>

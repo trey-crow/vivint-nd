@@ -211,6 +211,8 @@ $(document).ready(function () {
 
 
 
+
+
 // Script for handling video modal in the hero section
 
 $(document).ready(function() {
