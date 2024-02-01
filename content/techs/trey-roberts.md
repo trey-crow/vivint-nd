@@ -1,19 +1,20 @@
 ---
+heroButton: Contact me
+heroButtonURL: contact
+serviceTitle: What does Vivint do for you?
 Name: Trey Roberts
-phone: (972) 512-8337
+phone: 385-329-3046
 email: william.roberts@vivint.com
+advanced: true
+amigoLink: 'https://amigoteam.com/order-submission/4064e07aa08b4835b634d5688be019bb'
+formsparkURL: 'https://submit-form.com/Sv32P1mD'
 heroContent: |
   # Experience Smart Living
 
   -Your Trusted Local Vivint Technician
-heroButton: Contact me
-heroButtonURL: contact
 heroImage: /trey/hero-trey.jpg
 heroVideoThumb: images/hero/popup-thumb.jpg
 heroVideoURL: 'https://www.youtube.com/embed/KzJzXHmzc98?si=6H9NcYkTtI0TeCpI'
-advanced: true
-amigoLink: 'https://amigoteam.com/order-submission/4064e07aa08b4835b634d5688be019bb'
-formsparkURL: 'https://submit-form.com/Sv32P1mD'
 offerTopTitle: Your Security is Our Priority
 offerTitle: >-
   Ready to experience the benefits of Vivint security and automation systems
@@ -86,7 +87,6 @@ security:
 
       if needed.
     img: /images/products/smok.png
-serviceTitle: What does Vivint do for you?
 services:
   - title: Fire Monitoring
     content: >
@@ -126,39 +126,4 @@ services:
     img: /images/service/speaker.png
 _template: tech
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
