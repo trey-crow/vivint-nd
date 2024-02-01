@@ -18,8 +18,8 @@ heroVideoURL: 'https://www.youtube.com/embed/KzJzXHmzc98?si=6H9NcYkTtI0TeCpI'
 offerTopTitle: Your Security is Our Priority
 offerTitle: >-
   Ready to experience the benefits of Vivint security and automation systems
-  with a trusted local expert? Contact us today to schedule your free
-  consultation and take the first step toward a smarter and safer home.
+  with a trusted local expert? Work directly with the technician responsible for
+  installing your new system and enjoy the benefits of a smarter, safer home.
 automation:
   - title: Thermostats
     content: >
