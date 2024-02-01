@@ -23,7 +23,7 @@
   {{ "<!--Favicon-->" | safeHTML }}
   <link rel="shortcut icon" href="{{ "images/favicon.ico" | absURL }}" type="image/x-icon" />
   <link rel="icon" href="{{ "images/favicon.png" | absURL }}" type="image/x-icon" />
-  {{ with site.Params.googleAnalytics }}
+
   {{ "<!-- Google Analytics -->" | safeHTML }}
   <script src="https://www.google.com/recaptcha/api.js" async></script>
  <!-- Google tag (gtag.js) -->
@@ -36,4 +36,5 @@
 
   gtag('config', 'G-M9TJ7HTFWH');
 </script>
+
 </head>
