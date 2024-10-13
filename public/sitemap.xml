@@ -2,6 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://northdallas.pro/partners/test/</loc>
+  </url><url>
     <loc>https://northdallas.pro/techs/chris-beard/</loc>
   </url><url>
     <loc>https://northdallas.pro/techs/jeff-sorth/</loc>
@@ -17,6 +19,8 @@
     <loc>https://northdallas.pro/techs/trey-roberts/</loc>
   </url><url>
     <loc>https://northdallas.pro/posts/hello-world/</loc>
+  </url><url>
+    <loc>https://northdallas.pro/partners/</loc>
   </url><url>
     <loc>https://northdallas.pro/posts/</loc>
   </url><url>
