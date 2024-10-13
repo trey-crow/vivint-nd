@@ -381,7 +381,7 @@ export default defineConfig({
             templates: [
               {
               name: "partner",
-              label: "Partner",
+              label: "partner",
               format: "md",
               fields: [
                 {
@@ -539,7 +539,7 @@ export default defineConfig({
               ],
           },
           {
-              name: "Partner",
+              name: "partner",
               label: "Partner",
               format: "md",
               fields: [
@@ -700,6 +700,7 @@ export default defineConfig({
         ],
       
       },
+      
     ],
   },
   search: {
