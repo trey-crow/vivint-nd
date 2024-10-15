@@ -4,7 +4,7 @@ phone: 385-985-6519
 email: jaden.palmer@vivint.com
 advanced: true
 amigoLink: 'https://amigoteam.com/order-submission/4064e07aa08b4835b634d5688be019bb'
-formsparkURL: 'https://api.formspark.io/WsAcyfni0'
+formsparkURL: 'https://api.formspark.io/mqMYOV5w9'
 heroContent: |
   # Experience Smart Living
 
