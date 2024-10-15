@@ -7,7 +7,7 @@ phone: 385-329-3046
 email: william.roberts@vivint.com
 advanced: true
 amigoLink: 'https://amigoteam.com/order-submission/4064e07aa08b4835b634d5688be019bb'
-formsparkURL: 'https://submit-form.com/Sv32P1mD'
+formsparkURL: 'https://submit-form.com/WsAcyfni0'
 heroContent: |
   # Experience Smart Living
 
