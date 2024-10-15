@@ -2,16 +2,16 @@
 heroButton: Contact me
 heroButtonURL: contact
 serviceTitle: What does Vivint do for you?
-Name: Trey Roberts
-phone: 385-329-3046
-email: william.roberts@vivint.com
+Name: Daniela Michelle
+phone: ''
+email: ''
 advanced: true
 amigoLink: 'https://amigoteam.com/order-submission/4064e07aa08b4835b634d5688be019bb'
 formsparkURL: 'https://api.formspark.io/WsAcyfni0'
 heroContent: |
   # Experience Smart Living
 
-  -Your Trusted Local Vivint Technician
+  -Enjoy a $300 Discount from Daniela 
 heroImage: /trey/hero-trey.jpg
 heroVideoThumb: images/hero/popup-thumb.jpg
 heroVideoURL: 'https://www.youtube.com/embed/KzJzXHmzc98?si=6H9NcYkTtI0TeCpI'
