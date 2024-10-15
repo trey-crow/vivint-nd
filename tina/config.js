@@ -387,7 +387,7 @@ export default defineConfig({
   },
   search: {
     tina: {
-      indexerToken: 'aef0d6bb6ffa9aad6fe3b26466322130b088f4fa',
+      indexerToken: '590ba925343164c14ddceaeac3903058b1f8ef1a',
       stopwordLanguages: ['eng']
     },
     indexBatchSize: 100,
