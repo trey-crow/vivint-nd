@@ -1,7 +1,7 @@
 <section>
 
   <div class="footer__cta">
-    <form class="contact-form" id="contact-form" method="POST">
+      <form class="contact-form" id="contact-form"  method="POST">
         <div class="row justify-content-center">
             <div class="form-field col-sm">
                 <input id="name" class="input-text js-input" placeholder=" " name="name" type="text" required>
@@ -10,82 +10,50 @@
             <div class="form-field col-sm">
                 <input id="email" class="input-text js-input" placeholder=" " name="email" type="email" required>
                 <label class="label" for="email">E-mail*</label>
+               
             </div>
             <div class="form-field col-sm">
                 <input id="phoneNumber" class="input-text js-input" placeholder=" " name="phone" type="tel" minlength="10" maxlength="12" required>
                 <label class="label" for="phone">Phone*</label>
+                
             </div>
-
-            <!-- Consent Checkbox -->
             <div class="form-field col-md">
-                <input type="hidden" name="partner" value="{{ .Params.Name }}">
-            </div>
+              <input type="hidden" id="partner" value="{{ .Params.Name }}">
+          </div>
+            <!-- <div class="g-recaptcha" data-sitekey="6Lec2_gnAAAAAAtP3YgwYG_jG_Sf_FTBA5Dm_vOW"></div> -->
             <div class="form-field col-lg-12">
-                <div class="form-field col-lg">
-                    <label class="label" for="consent">
-                        <input id="consent" type="checkbox" required>
-                        I consent to being contacted by an authorized Vivint representative for a free quote.
-                    </label>
-                </div>
-                <p>
-                    <button id="send-button" class="submit-btn" type="submit" disabled>Submit</button>
-                </p>
+              <div class="form-field col-lg">
+                <label class="label" for="consent">
+                    <input id="consent" type="checkbox" required>
+                    I consent to being contacted by an authorized Vivint representative for a free quote.
+                </label>
+            </div>
+                <input id="formspark-url" value="{{ .Params.formsparkURL }}"  type="hidden">
+                <button id="send-button" class="submit-btn" type="submit" formtarget="_self" disabled>Submit</button>
                 <p id="contact-form-status" class="mt-3" style="display: none;">Form Submitted</p>
+                
             </div>
         </div>
     </form>
-</div>
-
-<script>
-    const consentCheckbox = document.getElementById('consent');
-    const submitButton = document.getElementById('send-button');
-    const contactForm = document.getElementById('contact-form');
-    const statusMessage = document.getElementById('contact-form-status');
-
-    // Enable submit button when consent is checked
-    consentCheckbox.addEventListener('change', () => {
-        submitButton.disabled = !consentCheckbox.checked;
-    });
-
-    // Handle form submission via Ajax
-    contactForm.addEventListener('submit', (event) => {
-        event.preventDefault(); // Prevent the form from submitting the default way
-
-        const formData = new FormData(contactForm); // Create a FormData object
-        const formDataJSON = Object.fromEntries(formData.entries()); // Convert to a plain object
-
-        submitButton.textContent = 'Submitting...';
-        submitButton.disabled = true; // Disable the button
-
-        fetch('https://submit-form.com/Sv32P1mD', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(formDataJSON)
-        })
-        .then(response => {
-            if (response.ok) {
-                // Show success message
-                statusMessage.textContent = 'Form Submitted Successfully!';
-                statusMessage.style.display = 'block';
-                contactForm.reset(); // Reset the form
-                consentCheckbox.checked = false; // Uncheck the consent box
-            } else {
-                // Show error message
-                statusMessage.textContent = 'Submission failed. Please try again.';
-                statusMessage.style.display = 'block';
-            }
-            submitButton.textContent = 'Submit';
-            submitButton.disabled = false; // Re-enable the button
-        })
-        .catch(error => {
-            console.error('Error:', error);
-            statusMessage.textContent = 'An error occurred. Please try again.';
-            statusMessage.style.display = 'block';
-            submitButton.textContent = 'Submit';
-            submitButton.disabled = false; // Re-enable the button
-        });
-    });
-</script>
-
+     
+  
+    
+      <div class="shape-1">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" width="357" height="315.029" viewBox="0 0 357 315.029">
+          <path data-name="Path 1449"
+            d="M76.1-157.222C91.746-135.8 87.2-94.273 99.993-61.945c12.7 32.328 42.661 55.459 39.248 73.282-3.318 17.823-40.007 30.337-65.6 43.325-25.5 12.988-39.912 26.545-60.01 42.566-20.1 16.116-46.074 34.6-63.328 27.682-17.349-6.921-25.976-39.153-59.915-59.82s-93.1-29.768-105.325-51.478 22.373-56.028 43.609-93.949c21.331-37.921 29.2-79.35 53.563-96.793 24.459-17.444 65.414-10.9 103.9-6.921 38.396 3.982 74.326 5.404 89.965 26.829z"
+            transform="translate(217.489 188.626)" />
+        </svg>
+      </div>
+      <div class="shape-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="357" height="315.029" viewBox="0 0 357 315.029">
+          <path data-name="Path 1449"
+            d="M76.1-157.222C91.746-135.8 87.2-94.273 99.993-61.945c12.7 32.328 42.661 55.459 39.248 73.282-3.318 17.823-40.007 30.337-65.6 43.325-25.5 12.988-39.912 26.545-60.01 42.566-20.1 16.116-46.074 34.6-63.328 27.682-17.349-6.921-25.976-39.153-59.915-59.82s-93.1-29.768-105.325-51.478 22.373-56.028 43.609-93.949c21.331-37.921 29.2-79.35 53.563-96.793 24.459-17.444 65.414-10.9 103.9-6.921 38.396 3.982 74.326 5.404 89.965 26.829z"
+            transform="translate(217.489 188.626)" />
+        </svg>
+      </div>
+      
+  
+  </div>
+  </section>

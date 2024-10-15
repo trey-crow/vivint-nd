@@ -96,9 +96,9 @@ function autoResize(iframe) {
 
 
 
-<!-- {{ $formhandler := resources.Get "js/form-handler.js" | minify }}
+{{ $formhandler := resources.Get "js/form-handler.js" | minify }}
 <script src="{{ $formhandler.Permalink }}"></script> 
 
--->
+
 {{ $script := resources.Get "js/script.js" | minify }}
 <script src="{{ $script.Permalink }}"></script>

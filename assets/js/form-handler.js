@@ -1,5 +1,11 @@
-
+const consentCheckbox = document.getElementById('consent');
 const submitButton = document.getElementById("send-button");
+consentCheckbox.addEventListener('change', () => {
+  submitButton.disabled = !consentCheckbox.checked;
+});
+
+// Handle form submission
+
 submitButton.addEventListener("click", function(event) {
    event.preventDefault();
 
@@ -8,8 +14,11 @@ submitButton.addEventListener("click", function(event) {
     const nameInput = document.getElementById("name");
     const emailInput = document.getElementById("email");
     const phoneInput = document.getElementById("phoneNumber");
+    const partner = document.getElementById("partner").value;
     const status = document.getElementById("contact-form-status");
     const form = document.getElementById("contact-form");
+    
+  
 
     const name = nameInput.value;
     const nameParts = name.split(' ');
@@ -17,6 +26,10 @@ submitButton.addEventListener("click", function(event) {
     const firstName = nameParts[0];
     const lastName = nameParts[1];
 
+    
+  // Optionally reset the form after submission
+  // contactForm.reset(); // Uncomment if you want to reset
+  // consentCheckbox.checked = false; // Uncomment if you want to uncheck the consent box
 
    
 
@@ -41,16 +54,27 @@ submitButton.addEventListener("click", function(event) {
       phoneInput.classList.remove("invalid-input");
       fetch(url, {
           method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
           body: JSON.stringify({
             firstName:  firstName,
             lastName: lastName,
             email: emailInput.value,
             phone: phoneInput.value,
+            partner: partner,
           }),
         })
           .then(function (response) {
+            submitButton.textContent = 'Form Submitted';
+            submitButton.disabled = true; // Disable the button
+
+            // Show the status message
+             statusMessage.style.display = 'block';
+
             status.style.display = "block"
-            form.reset();
+           // form.reset();
             console.log(response);
           })
           .catch(function (error) {
