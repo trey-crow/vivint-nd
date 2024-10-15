@@ -41,10 +41,6 @@ submitButton.addEventListener("click", function(event) {
       phoneInput.classList.remove("invalid-input");
       fetch(url, {
           method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Accept: "application/json",
-          },
           body: JSON.stringify({
             firstName:  firstName,
             lastName: lastName,

@@ -1,7 +1,7 @@
 <section>
 
   <div class="footer__cta">
-      <form class="contact-form" id="contact-form"  method="POST">
+      <form class="contact-form" id="contact-form" action="https://submit-form.com/WsAcyfni0">
         <div class="row justify-content-center">
             <div class="form-field col-sm">
                 <input id="name" class="input-text js-input" placeholder=" " name="name" type="text" required>
@@ -17,10 +17,12 @@
                 <label class="label" for="phone">Phone*</label>
                 
             </div>
-            <!-- <div class="g-recaptcha" data-sitekey="6Lec2_gnAAAAAAtP3YgwYG_jG_Sf_FTBA5Dm_vOW"></div> -->
+            <!-- <div class="g-recaptcha" data-sitekey="6Lec2_gnAAAAAAtP3YgwYG_jG_Sf_FTBA5Dm_vOW"></div> 
+              <input id="formspark-url" value="{{ .Params.formsparkURL }}"  type="hidden">-->
             <div class="form-field col-lg-12">
-                <input id="formspark-url" value="{{ .Params.formsparkURL }}"  type="hidden">
-                <button id="send-button" class="submit-btn" type="submit" >Submit</button>
+               
+                <input type="hidden" name="_feedback.whitelabel" value="true" />
+                <button id="send-button" class="submit-btn" type="submit">Submit</button>
                 <p id="contact-form-status" class="mt-3" style="display: none;">Form Submitted</p>
                 
             </div>
