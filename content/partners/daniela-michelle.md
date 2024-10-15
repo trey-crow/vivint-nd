@@ -8,7 +8,7 @@ formsparkURL: 'https://api.formspark.io/WsAcyfni0'
 heroContent: |
   # Experience Smart Living
 
-  -Enjoy $300 of from Daniela
+  -Enjoy $300 off from Daniela
 heroImage: /trey/hero-trey.jpg
 heroVideoThumb: images/hero/popup-thumb.jpg
 heroVideoURL: 'https://www.youtube.com/embed/KzJzXHmzc98?si=6H9NcYkTtI0TeCpI'
