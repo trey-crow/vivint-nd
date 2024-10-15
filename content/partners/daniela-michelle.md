@@ -2,7 +2,7 @@
 Name: Daniela Michelle
 phone: ''
 email: ''
-advanced: true
+advanced: false
 amigoLink: 'https://amigoteam.com/order-submission/4064e07aa08b4835b634d5688be019bb'
 formsparkURL: 'https://api.formspark.io/WsAcyfni0'
 heroContent: |
