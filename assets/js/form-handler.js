@@ -1,12 +1,13 @@
 const consentCheckbox = document.getElementById('consent');
 const submitButton = document.getElementById("send-button");
+const form = document.getElementById("contact-form")
 consentCheckbox.addEventListener('change', () => {
   submitButton.disabled = !consentCheckbox.checked;
 });
 
 // Handle form submission
 
-submitButton.addEventListener("click", function(event) {
+form.addEventListener("submit", function(event) {
    event.preventDefault();
 
 
@@ -14,7 +15,7 @@ submitButton.addEventListener("click", function(event) {
     const nameInput = document.getElementById("name");
     const emailInput = document.getElementById("email");
     const phoneInput = document.getElementById("phoneNumber");
-    const partner = document.getElementById("partner").value;
+    //const partner = document.getElementById("partner").value;
     const status = document.getElementById("contact-form-status");
     const form = document.getElementById("contact-form");
     
@@ -63,7 +64,7 @@ submitButton.addEventListener("click", function(event) {
             lastName: lastName,
             email: emailInput.value,
             phone: phoneInput.value,
-            partner: partner,
+            //partner: partner,
           }),
         })
           .then(function (response) {
