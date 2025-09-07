@@ -35,7 +35,7 @@
     z-index: 0;
     width: 65%;
     svg {
-     
+      color: $taupe;
       width: 100%;
       height: 100%;
     }
@@ -57,7 +57,7 @@
       margin-bottom: 60px;
     }
     .hero_blob {
-      
+     
       position: absolute;
       z-index: -1;
       top: -45%;
@@ -73,6 +73,7 @@
       }
     }
     span {
+      
       font-size: 24px;
       position: relative;
       display: block;
@@ -94,6 +95,7 @@
       width: 100%;
     }
     .figure-svg {
+      
       position: absolute;
       top: -55px;
       left: 50%;
