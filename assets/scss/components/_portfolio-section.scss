@@ -37,7 +37,7 @@
     }
     &-content {
       span {
-        color: #7e7e8a;
+        color: $primary;
         font-size: 18px;
         line-height: 1;
         display: block;
@@ -68,7 +68,7 @@
     }
     &:hover {
       .portfolio-item-thumb {
-        box-shadow: 0px 20px 40px 0px rgba(50, 65, 141, 0.12);
+        box-shadow: 0px 20px 40px 0px rgba(5, 229, 175, 0.12);
       }
       .portfolio-item-content {
         .see-more-btn {

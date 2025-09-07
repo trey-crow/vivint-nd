@@ -1,5 +1,5 @@
 .testimonial {
-  background: #f1f6f9;
+  background: $taupe;
   position: relative;
   padding: 170px 0 150px 0;
   @include desktop {
@@ -23,7 +23,7 @@
   }
   &__slider {
     &_item {
-      background: $white;
+      background: $taupe;
       border-radius: 20px;
       padding: 60px 50px;
       margin: 30px 25px 60px;
@@ -57,7 +57,7 @@
         position: relative;
         span {
           font-weight: bold;
-          color: #282f49;
+          color: $primary;
         }
         &:before {
           position: absolute;
@@ -67,7 +67,7 @@
           left: -35px;
           top: 50%;
           transform: translateY(-50%);
-          background: #282f49;
+          background: $primary;
         }
       }
     }

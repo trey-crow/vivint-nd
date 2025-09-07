@@ -23,7 +23,7 @@
     &__textContent{
         
             h4,p{
-                color: white;
+                color: $taupe;
             }
     
         
@@ -54,10 +54,10 @@
     &__slider {
         &_item {
             @include mobile{
-                box-shadow: 0px 20px 40px 0px rgba(20, 28, 28, 0.5);
+                box-shadow: 0px 20px 40px 0px rgba(40, 42, 59, 0.5);
             }
             @include media(desktop, tablet){
-                box-shadow: 0px 20px 40px 0px rgba(255, 255, 255, 0.2);
+                box-shadow: 0px 20px 40px 0px rgba(40, 42, 59, 0.2);
             }
             margin: 15px;
             padding: 30px;
@@ -105,7 +105,7 @@
                     cursor: pointer;
                     height: 100%;
                     width: 100%;
-                    background: #c2c8cc;
+                    background: $taupe;
                     border-radius: 50%;
                     transition: all 0.3s ease;
                     display: block;
@@ -115,7 +115,7 @@
                         outline: 0;
                     }
                     &:hover {
-                        background: $primary;
+                        background: $secondary;
                     }
                 }
                 &.slick-active {

@@ -3,12 +3,13 @@
 //
 
 // General
-$primary: #141C1C;
-$secondary: #FFFFFF;
-$greytwo: #626E6E;
+$primary: #282A3B;
+$secondary: #05E5AF;
+$greytwo: #282A3B;
 $palm: #445D31;
 $slate: #909999;
 $slate-tint: #9baba9;
+$taupe: #F3EFE8;
 $sol: #DBA435;
 // Text
 $headings-color: $primary;
@@ -26,17 +27,17 @@ $body-color: $primary;
 
 @font-face {
     font-family: VivintBold;
-    src: url("/fonts/vivintCircular-Bold.otf") format("opentype");
+    src: url("/fonts/VivintRounded-Bold.otf") format("opentype");
     
 }
 @font-face {
-    font-family: VivintSans;
-    src: url("/fonts/VivintSans-Medium.otf") format("opentype");
+    font-family: VivintRegular;
+    src: url("/fonts/VivintRounded-Regular.otf") format("opentype");
     
 }
 // @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900|Yeseva+One&display=swap");
 $font-family-base: "VivintBold";
-$headings-font-family: "VivintSans";
+$headings-font-family: "VivintRegular";
 
 // Size
 $font-size-base: 1.125rem; // 18px

@@ -8,17 +8,17 @@
 
 a.text-light,
 a.text-dark {
-    color: $greytwo !important;
+    color: $secondary !important;
     // transition: all 0.3s ease;
     &:hover {
-        color: $palm !important;
+        color: $taupe !important;
     }
 }
 
 .top-title {
     font-size: 20px;
     display: block;
-    color: $palm;
+    color: $secondary;
     @extend .mb-3;
 }
 
@@ -46,7 +46,7 @@ a.text-dark {
     h4,
     h5,
     h6 {
-        color: $white;
+        color: $taupe;
     }
 }
 @each $color, $value in $theme-colors {
@@ -59,7 +59,7 @@ a.text-dark {
         h6,
         p,
         span {
-            color: $value;
+            color: $taupe;
         }
     }
 }
