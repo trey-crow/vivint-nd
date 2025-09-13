@@ -2,7 +2,7 @@
 Name: Tracy Martinez
 phone: 945-234-8972
 email: tracy.martinez@vivint.com
-advanced: false
+advanced: true
 amigoLink: 'https://amigoteam.com/order-submission/4064e07aa08b4835b634d5688be019bb'
 formsparkURL: 'https://submit-form.com/xtzKT7XuB'
 heroContent: |
