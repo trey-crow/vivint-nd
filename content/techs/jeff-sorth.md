@@ -4,7 +4,7 @@ phone: 435-503-7015
 email: jeff.sorth@vivint.com
 advanced: true
 amigoLink: 'https://amigoteam.com/order-submission/4064e07aa08b4835b634d5688be019bb'
-formsparkURL: 'https://submit-form.com/xtzKT7XuB'
+formsparkURL: 'https://submit-form.com/GkB5rKerM'
 heroContent: |
   # Experience Smart Living
 
