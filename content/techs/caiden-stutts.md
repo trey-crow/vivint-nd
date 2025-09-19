@@ -4,7 +4,7 @@ phone: 469-631-8702
 email: caiden.stutts@vivint.com
 advanced: true
 amigoLink: 'https://amigoteam.com/order-submission/4064e07aa08b4835b634d5688be019bb'
-formsparkURL: 'https://submit-form.com/xtzKT7XuB'
+formsparkURL: 'https://submit-form.com/HS0FutTbx'
 heroContent: |
   # Experience Smart Living
 
