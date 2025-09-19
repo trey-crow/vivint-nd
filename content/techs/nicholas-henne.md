@@ -4,7 +4,7 @@ phone: 945-310-4870
 email: nicholas.henne@vivint.com
 advanced: true
 amigoLink: 'https://amigoteam.com/order-submission/4064e07aa08b4835b634d5688be019bb'
-formsparkURL: 'https://submit-form.com/xtzKT7XuB'
+formsparkURL: 'https://submit-form.com/t3wydnfqv'
 heroContent: |
   # Experience Smart Living
 
@@ -28,7 +28,8 @@ automation:
       that controls your locks, cameras, and garage door. This wifi thermostat
       completes your system, ensuring your home temperature stays where you want
       it, always.
-    img: /images/products/therm.png
+    img: >-
+      /products/web_alpha-20250717-SmartTherm-73-75-Therm-73-75-R45-4000x4000.png
   - title: Door Locks
     content: >
       #### Door Locks
