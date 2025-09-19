@@ -28,7 +28,8 @@ automation:
       that controls your locks, cameras, and garage door. This wifi thermostat
       completes your system, ensuring your home temperature stays where you want
       it, always.
-    img: /images/products/therm.png
+    img: >-
+      /products/web_alpha-20250717-SmartTherm-73-75-Therm-73-75-R45-4000x4000.png
   - title: Door Locks
     content: >
       #### Door Locks
