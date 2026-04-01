@@ -1,7 +1,7 @@
 ---
 Name: 'Fred Ford '
 phone: 385-254-8658
-email: fred.ford@vivint.com
+email: fred.fordii@vivint.com
 advanced: true
 amigoLink: 'https://amigoteam.com/order-submission/4064e07aa08b4835b634d5688be019bb'
 formsparkURL: 'https://submit-form.com/Hux0sdaPd'
