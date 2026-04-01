@@ -20,7 +20,7 @@ automation:
       ### Thermostats
 
       With the Vivint Smart Thermostat, you can turn on the air conditioning on your way home or lower the heat when you get to work—all from the same app that controls your locks, cameras, and garage door. This wifi thermostat completes your system, ensuring your home temperature stays where you want it, always.
-    img: /images/products/therm.png
+    img: /products/web_alpha-20250717-SmartTherm-73-75-Therm-73-75-R45-4000x4000.png
   - title: Door Locks
     content: |
       #### Door Locks
