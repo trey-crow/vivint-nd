@@ -78,6 +78,6 @@ services:
     content: |
       Experience whole-home protection like never before. Our state-of-the-art alarm system not only alerts a monitoring station but also sets off sirens throughout your home. Complete security, immediate response
     img: /images/service/speaker.png
-_template: tech
+_template: dealer
 ---
 
