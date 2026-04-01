@@ -1,5 +1,5 @@
 ---
-Name: 'Fred Ford '
+Name: Fred Ford
 phone: 385-254-8658
 email: fred.fordii@vivint.com
 advanced: true
