@@ -21,9 +21,9 @@ export default defineConfig({
   schema: {
     collections: [
       {
-        name: "techs",
-        label: "Technicians",
-        path: "content/techs",
+        name: "dealers",
+        label: "Dealers",
+        path: "content/dealers",
         format: "md",
         ui: {
           filename: {
@@ -40,8 +40,8 @@ export default defineConfig({
         },
             templates: [
           {
-              name: "tech",
-              label: "Technician",
+              name: "dealer",
+              label: "Dealer",
               format: "md",
               fields: [
                 {
